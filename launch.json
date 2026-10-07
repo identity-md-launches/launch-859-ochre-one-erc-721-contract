@@ -1,0 +1,29 @@
+{
+  "kind": "evm_contracts",
+  "contracts": [
+    {
+      "contract": "MockCoin",
+      "constructorArgs": [
+        "0x7B8C742F2e1eEB3fB2C10d72967Fa6d4a22f0479"
+      ]
+    },
+    {
+      "contract": "Ochre",
+      "constructorArgs": [
+        "$contract:MockCoin",
+        "0x7B8C742F2e1eEB3fB2C10d72967Fa6d4a22f0479",
+        "0x7B8C742F2e1eEB3fB2C10d72967Fa6d4a22f0479",
+        "0x1111111111111111111111111111111111111111111111111111111111111111",
+        "1791352835",
+        "0x7a746f2d636176652d7465737435000000000000000000000000000000000000",
+        "0x7a746f2d636176652d7465737434000000000000000000000000000000000000",
+        "0x7a746f2d636176652d7465737433000000000000000000000000000000000000",
+        "0x7a746f2d636176652d7465737432000000000000000000000000000000000000",
+        "0x7a746f2d636176652d7465737435000000000000000000000000000000000000",
+        "0x7a746f2d636176652d7465737434000000000000000000000000000000000000",
+        "0x7a746f2d636176652d7465737433000000000000000000000000000000000000"
+      ]
+    }
+  ],
+  "notes": "Sepolia rehearsal only (chain id 11155111). Deploy MockCoin then Ochre with zero ETH. Prices are literal base units: 400000 start, 40000 floor; PGMT has 18 decimals. Fixed sink 0x000000000000000000000000000000000000dEaD. The 0x11 seat root is a placeholder with no supplied valid proofs. No broadcast or funded-wallet access is performed by this project."
+}
